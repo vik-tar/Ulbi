@@ -13,7 +13,7 @@ const App = () => {
     <div className={classNames('app', {}, [theme])}>
       <button onClick={toggleTheme}>T o g g l e</button>
       <Link to={'/'}>Main</Link>
-      {/*<Link to={'/about'}>About</Link>*/}
+      <Link to={'/about'}>About</Link>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path={'/'} element={<MainPage />} />
